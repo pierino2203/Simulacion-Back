@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,11 @@
     "url": "https://github.com/pierino2203/Simulacion-Back/issues"
   },
   "homepage": "https://github.com/pierino2203/Simulacion-Back#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.15.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.10"
+  }
 }
