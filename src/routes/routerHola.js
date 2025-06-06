@@ -1,9 +1,7 @@
-const { Router } = require('express');
+const express = require('express');
+const router = express.Router();
+const { guardarSimulacion, obtenerSimulaciones } = require('../Controllers/SimulacionController');
 
-const routerHola = Router();
+router.get('/', router.get('/', obtenerSimulaciones));
 
-routerHola.get('/', (req, res) => {
-    res.send('¡Hola desde Node.js!');
-});
-
-module.exports = routerHola;
+module.exports = router;
