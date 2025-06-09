@@ -4,22 +4,16 @@ const Simulacion = require('../models/Simulacion');
 const guardarSimulacion = async (req, res) => {
     try {
         const {
-            resultado,
-            temperatura,
-            mesSiembra,
-            humedad,
-            porcentajeAfectacion,
-            accionRecomendada
+            tipoDanio,
+            porcentaje,
+            recomendacion
         } = req.body;
 
         // Crear nueva simulación
         const nuevaSimulacion = new Simulacion({
-            resultado,
-            temperatura,
-            mesSiembra,
-            humedad,
-            porcentajeAfectacion,
-            accionRecomendada
+            tipoDanio,
+            porcentaje,
+            recomendacion
         });
 
         // Guardar en la base de datos

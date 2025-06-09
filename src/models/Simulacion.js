@@ -1,27 +1,15 @@
 const mongoose = require('mongoose');
 
 const simulacionSchema = new mongoose.Schema({
-    resultado: {
+    tipoDanio: {
         type: String,
         required: true
     },
-    temperatura: {
+    porcentaje: {
         type: String,
         required: true
     },
-    mesSiembra: {
-        type: String,
-        required: true
-    },
-    humedad: {
-        type: String,
-        required: true
-    },
-    porcentajeAfectacion: {
-        type: String,
-        required: true
-    },
-    accionRecomendada: {
+    recomendacion: {
         type: String,
         required: true
     },
